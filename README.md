@@ -19,7 +19,7 @@ pip install -r requirements.txt
 in Command Prompt
 pip install virtualenv
 virtualenv env
-source env/bin/activate
+source env/Scripts/activate
 ```
 **3.Migrate & Start Server**
 ```sh
