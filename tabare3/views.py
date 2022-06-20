@@ -31,7 +31,7 @@ def search(request):
     
     result = Person.objects.all()
     result_paginator = Paginator(result,20)
-    page_num = request.GET.get('page')
+    page_num = request.GET.get('page',1)
     page = result_paginator.get_page(page_num)
     context = {
     ' count':result_paginator.count,
